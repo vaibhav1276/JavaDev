@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Score Keeper Page</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="E:\Web Developer Bootcamp\ScoreKeeperPractice\font-awesome-4.7.0\css\font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="scoreKeeperCSS.css">
+</head>
+<body>
+	<!-- <div class="container"> -->
+		<!-- <div class="jumbotron"> -->
+
+			<h1 id="MainHeading">
+				<span id="resetButton"><i class="fa fa-refresh" aria-hidden="true"></i></span>
+				<strong>Score Keeper</strong>
+				<span id=settingButton><i class="fa fa-cog" aria-hidden="true" data-toggle="modal" data-target="#myModal"></i></span>
+				<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+		</h1>
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+			
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4 class="modal-title">Please Enter the Maximum Score</h4>
+				</div>
+				<div class="modal-body">
+					<input type="number" placeholder="Playing till ?? " id="maxScore"></input>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			  </div>
+			  
+			</div>
+		  </div>
+		<hr id="horizontalLine">
+		<!-- </div> -->
+		<div class="row">
+			<div class="col-sm-6">
+				<span id="winTag1"></span><br>
+				<h2> Player 1</h2>
+				<h1><span id="Player1Score"> 0 </span><br>
+				<i id="Player1Button" class="fa fa-plus-square fa-3x" aria-hidden="true"></i> 
+				
+			</div>
+			<div class="col-sm-6">
+				<span id="winTag2"></span><br>
+				<h2> Player 2</h2>
+				<h1><span id="Player2Score"> 0 </span><br>
+				<i id="Player2Button" class="fa fa-plus-square fa-3x" aria-hidden="true"></i>
+			</div>
+		</div>
+
+		<h2>Playing till : <span id="winningScore">5</h2></span>
+		<!-- <input type="number" placeholder="Playing till ?? " id="maxScore"></input> -->
+
+	<!-- </div> -->
+<script type="text/javascript" src="scoreKeeperJS.js"></script>
+</body>
+</html>

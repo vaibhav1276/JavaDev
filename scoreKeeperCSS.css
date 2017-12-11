@@ -1,0 +1,59 @@
+/*.jumbotron
+{
+	text-align: center;
+}
+
+.col-sm-6
+{
+	text-align: center;
+}*/
+
+body
+{
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Calibri";
+	background-image: url("abstract-background-design.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 140%;
+	margin: 20px 20px;
+	font-weight: 800;
+	
+}
+
+#Player1Button,
+#Player2Button
+{
+	color: black;
+	margin : 0px 0px;
+}
+
+/*.fa fa-plus-square fa-3x
+{
+	padding : 0px 0px;
+}*/
+winTagCSS
+{
+	font-weight: 800;
+}
+
+#resetButton
+{
+	float: left;
+}
+
+#MainHeading
+{
+	font-size: 5em;
+
+}
+
+#settingButton
+{
+	
+	float: right;
+}
+#horizontalLine
+{
+	border: 2px solid black;
+}
